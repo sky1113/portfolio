@@ -34,7 +34,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body
-        className={`${cormorantGaramond.variable} ${cabin.variable} bg-white text-black relative`}
+        className={`${cormorantGaramond.variable} ${cabin.variable} bg-white text-black`}
       >
         <div className="blob-1 absolute top-[-10%] left-[20%] w-[45vw] h-[45vh] rounded-full blur-[12rem] bg-[#DEE2FF]"></div>
         <div className="blob-2 absolute top-[60%] right-[-5%] w-[40vw] h-[40vh] rounded-full blur-[12rem] bg-[#B8E1E7]"></div>
