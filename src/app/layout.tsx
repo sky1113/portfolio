@@ -17,7 +17,10 @@ const cabin = Cabin({
 
 export const metadata: Metadata = {
   title: "Skylar | Personal Portfolio",
-  description: "Skylar Rearick is a full-stack developer looking for entry-level positions.",
+  description: "Skylar Rearick is a full-stack developer looking for entry-level positions in the Greater Seattle area.",
+  icons: {
+    icon: 'favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -28,8 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorantGaramond.variable} ${cabin.variable}`}
+        className={`${cormorantGaramond.variable} ${cabin.variable} bg-white text-black relative`}
       >
+        <div className="blob-1 absolute -z-10 top-[-10%] left-[20%] w-[45vw] h-[45vh] rounded-full blur-[12rem] bg-[#DEE2FF]"></div>
+        <div className="blob-2 absolute -z-10 top-[60%] right-[-5%] w-[40vw] h-[40vh] rounded-full blur-[12rem] bg-[#B8E1E7]"></div>
+        <div className="blob-3 absolute -z-10 top-[80%] left-[-5%] w-[43vw] h-[34.5vh] rounded-full blur-[12rem] bg-[#A5EFCC]"></div>
         {children}
       </body>
     </html>
