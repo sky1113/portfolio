@@ -21,7 +21,7 @@ export default function Header() {
             <a 
               key={link.hash} 
               href={link.hash} 
-              className="hover:text-gray-600 capitalize"
+              className="hover:text-gray-600"
             >
               {link.name}
             </a>
