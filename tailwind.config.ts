@@ -13,8 +13,8 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        serif: ['var(--font-cormorant-garamond)'],
-        sans: ['var(--font-cabin)'],
+        cormorant: ['var(--font-cormorant-garamond)', 'serif'],
+        cabin: ['var(--font-cabin)', 'sans-serif'],
       },
     },
   },
