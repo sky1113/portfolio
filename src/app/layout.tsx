@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
 import BackgroundBlobs from "@/components/BackgroundBlobs";
+import Header from "@/components/Header";
 import { Cormorant_Garamond, Cabin } from "next/font/google";
 
 const cormorantGaramond = Cormorant_Garamond({
