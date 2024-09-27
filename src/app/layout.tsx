@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import BackgroundBlobs from "@/src/components/BackgroundBlobs";
 import Header from "@/src/components/Header";
@@ -44,6 +45,7 @@ export default function RootLayout({
         <BackgroundBlobs />
         <Header />
         {children}
+        <Analytics />
       </body>
     </html>
   );
