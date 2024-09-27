@@ -4,48 +4,72 @@ import headshotImg from "@/public/me_cropped.jpeg";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-between mt-24 px-4 sm:px-6 md:px-8 lg:px-24">
+    <section className="flex flex-col-reverse lg:flex-row items-center justify-between my-12 md:my-24 px-4 sm:px-6 md:px-8 lg:px-24 gap-8 md:gap-12">
       {/* Text Content */}
-      <div className="mt-8 md:mt-0 md:w-1/2">
-        <h1 className="text-4xl sm:text-5xl font-bold font-serif">
-          Hi, I&apos;m <span className="italic">Skylar Rearick</span>!
+      <div className="md:w-1/2">
+        <h1 className="text-5xl font-bold font-serif text-center lg:text-left">
+          Hi, I&apos;m <span className="italic">Skylar</span>!
         </h1>
-        <p className="mt-4 text-lg sm:text-xl font-sans text-gray-700">
+        <p className="mt-4 text-xl text-center lg:text-left">
           I&apos;m a full-stack developer seeking roles in the Greater Seattle
           area, specializing in building high-quality web applications.
         </p>
-        <div className="flex items-center mt-6 space-x-4">
-          <a
-            href="https://linkedin.com/in/skylarrearick"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-700 hover:text-blue-600"
-            aria-label="LinkedIn"
-          >
-            <RxLinkedinLogo size={24} />
-          </a>
-          <a
-            href="https://github.com/sky1113"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-700 hover:text-black"
-            aria-label="GitHub"
-          >
-            <RxGithubLogo size={24} />
-          </a>
+
+        {/* Buttons and Icons */}
+        <div className="mt-6 flex flex-col items-center lg:items-start gap-4">
+          {/* Buttons */}
+          <div className="flex flex-col md:flex-row flex-wrap justify-center lg:justify-start gap-4">
+            <a
+              href="/ResumeFall2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-white border-2 border-gray-700 text-gray-700 rounded-full text-lg font-medium hover:bg-gray-100 transition-colors duration-300 text-center"
+            >
+              View Resume
+            </a>
+            <a
+              href="#contact"
+              className="px-6 py-3 bg-[#C8CFFD] border-2 border-gray-700 text-gray-700 rounded-full text-lg font-medium hover:bg-[#B2BCFC] transition-colors duration-300 text-center"
+            >
+              Get in Touch
+            </a>
+          </div>
+
+          {/* Icons */}
+          <div className="flex gap-4 mt-4">
+            <a
+              href="https://linkedin.com/in/skylarrearick"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-gray-800"
+              aria-label="LinkedIn"
+            >
+              <RxLinkedinLogo size={32} />
+            </a>
+            <a
+              href="https://github.com/sky1113"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-gray-800"
+              aria-label="GitHub"
+            >
+              <RxGithubLogo size={32} />
+            </a>
+          </div>
         </div>
-        <a
-          href="#contact"
-          className="inline-block mt-6 px-6 py-3 bg-gray-600 text-white rounded-md text-lg font-medium hover:bg-gray-700 transition-colors duration-300"
-        >
-          Get in Touch
-        </a>
       </div>
 
       {/* Profile Image */}
-      <div className="md:w-1/2 flex justify-center md:justify-end">
-        <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 overflow-hidden rounded-full border-4 border-gray-600 shadow-lg transition-transform duration-300 hover:scale-105">
-          <Image src={headshotImg} fill alt="Headshot of Skylar Rearick" />
+      <div className="flex justify-center lg:justify-end">
+        <div className="w-60 md:w-80 lg:w-[28rem] max-w-full rounded-full overflow-hidden border-2 border-gray-700 shadow-lg">
+          <Image
+            src={headshotImg}
+            alt="Headshot of Skylar Rearick"
+            width={552}
+            height={552}
+            className="w-full h-auto"
+            priority
+          />
         </div>
       </div>
     </section>

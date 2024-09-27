@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import BackgroundBlobs from "@/components/BackgroundBlobs";
-import Header from "@/components/Header";
+import BackgroundBlobs from "@/src/components/BackgroundBlobs";
+import Header from "@/src/components/Header";
 import { Cormorant_Garamond, Cabin } from "next/font/google";
 
 const cormorantGaramond = Cormorant_Garamond({
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cabin.variable} ${cormorantGaramond.variable} overflow-x-hidden`}
+      className={`${cabin.variable} ${cormorantGaramond.variable}`}
     >
       <body className="bg-white text-black">
         <BackgroundBlobs />
