@@ -16,7 +16,7 @@ export default function Hero() {
         </p>
 
         {/* Buttons and Icons */}
-        <div className="mt-6 flex flex-col items-center lg:items-start gap-4">
+        <div className="mt-6 flex flex-col lg:flex-row flex-wrap items-center gap-4">
           {/* Buttons */}
           <div className="flex flex-col md:flex-row flex-wrap justify-center lg:justify-start gap-4">
             <a
@@ -36,7 +36,7 @@ export default function Hero() {
           </div>
 
           {/* Icons */}
-          <div className="flex gap-4 mt-4">
+          <div className="flex gap-4 items-center">
             <a
               href="https://linkedin.com/in/skylarrearick"
               target="_blank"
