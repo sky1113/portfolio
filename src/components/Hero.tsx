@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="flex flex-col-reverse lg:flex-row items-center justify-between my-12 md:my-24 px-4 sm:px-6 md:px-8 lg:px-24 gap-8 md:gap-12">
       {/* Text Content */}
       <div className="md:w-1/2">
-        <h1 className="text-5xl font-bold font-serif text-center lg:text-left">
+        <h1 className="text-5xl font-bold font-cormorant text-center lg:text-left">
           Hi, I&apos;m <span className="italic">Skylar</span>!
         </h1>
         <p className="mt-4 text-xl text-center lg:text-left">
